@@ -72,7 +72,7 @@ def permutations(args, arg_name):
             del loop_num
 
         if confirm.lower() in ["y", "yes"]:
-            if output_file: #FIXME For some reason even when told to use a different file name it still saves as ample_passwds?
+            if output_file: #FIXME For some reason even when told to use a different file name it still saves as ample?
                 with open(output_file, "w+") as f:
                     for i in range(least, most + 1):
                         for comb in itertools.product(char, repeat=i):
