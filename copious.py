@@ -1,4 +1,3 @@
-import logo
 import argparse
 import itertools
 import string
@@ -128,6 +127,4 @@ def argument_handler(args):
 
 if __name__ == "__main__":
     args = flags()
-    if not args.dead_quiet:
-        logo.logo1(endwith="\n\n")
     argument_handler(args)
